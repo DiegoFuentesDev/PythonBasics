@@ -6,3 +6,5 @@ dictionaryNames = {
 
 print("Dictionary:",dictionaryNames)
 print("Only the name",dictionaryNames["name"])
+dictionaryNames["name"] = "Kevin Potter"
+print("Name Changed:",dictionaryNames)
