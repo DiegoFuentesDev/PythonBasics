@@ -1,3 +1,4 @@
+print("Lists / Array")
 lista = [1, 2 , 3, 4] #array
 print("lista",lista)
 lista2 = lista.copy() #cloning the array in other variable
@@ -13,9 +14,27 @@ print("len(lista2)",len(lista2),"elementos en el arreglo") # print how many elem
 print("1er elemento del arreglo =",lista2[0]) # print the first element in the array
 print("2do elemento del arreglo =",lista2[1]) # print the second
 print("3er elemento del arreglo =",lista2[3]) # print the third
-listaNombres = ["John", "Arthur", "Henry", "Alex", "Liam"]
+listaNombres = ["John", "Vince", "Randy", "Arthur", "Henry", "Alex", "Liam"]
 print("listaNombres",listaNombres)
 print("listaNombres.pop()",listaNombres.pop()) # print the deleted element (the last one)
 print("listaNombres despues de .pop()",listaNombres)
 print("listaNombres.remove('Arthur')",listaNombres.remove("Arthur")) # removing an specific element from the array
 print("listaNombres",listaNombres)
+listaNombres.reverse() #sorting in reverse mode the elements
+print("listaNombres.reverse()",listaNombres)
+listaNombres.sort() #sorting ASC the elements
+print("listaNombres.sort()",listaNombres)
+print("*************************************")
+print("*************************************")
+print("Tuples")
+tuple = ("Hello","World","From","Tuples")
+print("Original Tuple",tuple)
+print("tuple.count('Hello')",tuple.count("Hello"))
+print("tuple.index('From')",tuple.index("From"))
+print("tuple.append('GG'), it will be a mistake because tuple object has not attribute append")
+print("If we want to do this we have to Cast the tuple to a list")
+listFromTuple = list(tuple)
+print("And this will be our list from a tuple = ",listFromTuple)
+print("As you can see, it has brackets, not parenthesis")
+listFromTuple.append("GG")
+print("And now we can add 'GG' at the end of the object",listFromTuple)
